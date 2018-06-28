@@ -2,80 +2,166 @@
     "politician": [
         {
             "polId": 1,
-            "name": "Bill Clinton",
-            "bills": [1, 3, 4]
+            "name": "Bill Clinton"
         },
         {
             "polId": 2,
-            "name": "Hillary Clinton",
-            "bills": [2, 3]
+            "name": "Hillary Clinton"
         },
         {
             "polId": 3,
-            "name": "Rand Paul",
-            "bills": [1, 4]
+            "name": "Rand Paul"
         },
         {
             "polId": 4,
-            "name": "Ross Perot",
-            "bills": [1, 2, 3, 4]
+            "name": "Ross Perot"
         },
         {
             "polId": 5,
-            "name": "Donald Trump",
-            "bills": [3, 4]
+            "name": "Donald Trump"
+        }
+    ],
+    "billPolitician": [
+        {
+            "billId": 1,
+            "polId": 1
+        },
+        {
+            "billId": 1,
+            "polId": 3
+        },
+        {
+            "billId": 1,
+            "polId": 4
+        },
+        {
+            "billId": 2,
+            "polId": 2
+        },
+        {
+            "billId": 2,
+            "polId": 4
+        },
+        {
+            "billId": 3,
+            "polId": 1
+        },
+        {
+            "billId": 3,
+            "polId": 2
+        },
+        {
+            "billId": 3,
+            "polId": 4
+        },
+        {
+            "billId": 3,
+            "polId": 5
+        },
+        {
+            "billId": 4,
+            "polId": 1
+        },
+        {
+            "billId": 4,
+            "polId": 3
+        },
+        {
+            "billId": 4,
+            "polId": 4
+        }
+    ],
+
+    "politicianPac": [
+        {
+            "polId": 1,
+            "pacId": 1
+        },
+        {
+            "polId": 1,
+            "pacId": 4
+        },
+        {
+            "polId": 2,
+            "pacId": 1
+        },
+        {
+            "polId": 2,
+            "pacId": 3
+        },
+        {
+            "polId": 2,
+            "pacId": 4
+        },
+        {
+            "polId": 3,
+            "pacId": 1
+        },
+        {
+            "polId": 3,
+            "pacId": 2
+        },
+        {
+            "polId": 4,
+            "pacId": 2
+        },
+        {
+            "polId": 4,
+            "pacId": 4
+        },
+        {
+            "polId": 5,
+            "pacId": 3
+        },
+        {
+            "polId": 5,
+            "pacId": 4
         }
     ],
 
     "bills": [
         {
-            "billId": 1,
+            "id": 1,
             "billName": "Legalize It",
-            "interests": ["money", "employment", "reduced crime"],
-            "pacDonations": [1, 2]
+            "interests": ["money", "employment", "reduced crime"]
         },
         {
-            "billId": 2,
+            "id": 2,
             "billName": "Alcohol Prohibition",
-            "interests": ["reduced crime", "healthcare"],
-            "pacDonations": [3]
+            "interests": ["reduced crime", "healthcare"]
         },
         {
-            "billId": 3,
+            "id": 3,
             "billName": "Impeach Donald Trump",
-            "interests": ["literally everything in the entire universe"],
-            "pacDonations": [1, 2, 3, 4]
+            "interests": ["literally everything in the entire universe"]
         },
         {
-            "billId": 4,
+            "id": 4,
             "billName": "Kim Jong Un for President",
-            "interests": ["Nuclear Power", "he is god"],
-            "pacDonations": [4]
+            "interests": ["Nuclear Power", "he is god"]
         }
     ],
 
     "pacs": [
         {
-            "pacId": 1,
-            "pacName": "We love Weed",
+            "id": 1,
+            "pacName": "We love Weed"
         },
         {
-            "pacId": 2,
-            "pacName": "Cleveland Indians",
+            "id": 2,
+            "pacName": "Cleveland Indians"
         },
         {
-            "pacId": 3,
-            "pacName": "MADD",
-            "corpDonations": [4, 5]
+            "id": 3,
+            "pacName": "MADD"
         },
         {
-            "pacId": 4,
-            "pacName": "Disney",
-            "corpDonations": [3, 2, 1, 5]
+            "id": 4,
+            "pacName": "Disney"
         }
     ],
 
-    "pac/corp": [
+    "pacCorp": [
         {
             "pacId": 1,
             "corpId": 1
@@ -120,7 +206,7 @@
             "pacId": 4,
             "corpId": 5
         }
-    ]
+    ],
 
     "corporations": [
         {

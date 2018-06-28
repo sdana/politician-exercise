@@ -6,20 +6,21 @@ const apiController = Object.create({}, {
             return $.ajax("http://localhost:3000/politician")
         }
     },
-    getBills: {
+    getBillsArray: {
+        value: function(polId){
+            return $.ajax(`http://localhost:3000/billPolitician?_expand=bill&polId=${polId}`)
+        }
+    },
+    getBillsName: {
         value: function(billId){
             return $.ajax(`http://localhost:3000/bills?billId=${billId}`)
+        }
+    },
+    getPacs: {
+        value: function(polId){
+            return $.ajax(`http://localhost:3000/politicianPac?_expand=pac&polId=${polId}`)
         }
     }
 })
 
 module.exports = apiController
-
-
-
-
-//Corporations Table
-//bill/politician table
-//politician/PAC table
-//PAC/corporation table
-//interests table
