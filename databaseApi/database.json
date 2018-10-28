@@ -1,23 +1,23 @@
 {
-    "politician": [
+    "pols": [
         {
-            "polId": 1,
+            "id": 1,
             "name": "Bill Clinton"
         },
         {
-            "polId": 2,
+            "id": 2,
             "name": "Hillary Clinton"
         },
         {
-            "polId": 3,
+            "id": 3,
             "name": "Rand Paul"
         },
         {
-            "polId": 4,
+            "id": 4,
             "name": "Ross Perot"
         },
         {
-            "polId": 5,
+            "id": 5,
             "name": "Donald Trump"
         }
     ],

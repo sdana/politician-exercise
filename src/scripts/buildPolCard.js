@@ -5,12 +5,12 @@ const buildPolCard = () => {
     const mainDivEl = $("#main-div")
     apiController.getPolitician().then(politicianArray => {
         politicianArray.forEach(politician => {
-            mainDivEl.append($(`<section id=${politician.polId}><h1>${politician.name}</h1><h3>Sponsored Bills</h3></section>`))
+            mainDivEl.append($(`<section id=${politician.polId}><h1>${politician.name}</h1><h2>Sponsored Bills</h2></section>`))
             apiController.getBillsArray(politician.polId).then(billsArray => {
                 new Promise((resolve, reject) => {
                     billsArray.forEach(bill => {
                             const ulElement = $("<ul></ul>")
-                            $(`#${politician.polId}`).append($(`<h4>${bill.bill.billName}</h4>`)).append(ulElement)
+                            $(`#${politician.polId}`).append($(`<h3>${bill.bill.billName}</h3>`)).append(ulElement)
                                 for (let i in bill.bill.interests){
                                 ulElement.append($(`<li>${bill.bill.interests[i]}</li>`))
                             }
